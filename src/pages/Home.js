@@ -1,12 +1,18 @@
 // src/pages/Home.js
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Kasa</h1>
-      <h2>Chez vous, partout et ailleurs</h2>
-      <h3>Locations</h3>
+    <div className="home">
+      <div className="banner">
+        <h2 className="banner__title">Chez vous, partout et ailleurs</h2>
+      </div>
+      <div className="gallery">
+        <h3>
+          <Link to="/accomodation">Locations</Link>
+        </h3>
+      </div>
     </div>
   );
 };

@@ -1,10 +1,16 @@
 // src/components/Footer.js
 import React from 'react';
+import logobw from "../assets/images/logobw.png";
 
 const Footer = () => {
   return (
     <footer>
-      <p>© 2024 Kasa. All rights reserved.</p>
+      <img
+        className="kasa-logo"
+        src={logobw}
+        alt="Logo de Kasa, site de location immobilière"
+        title="Kasa, chez vous, partout et ailleurs."
+      />
     </footer>
   );
 };
