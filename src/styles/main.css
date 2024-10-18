@@ -18,6 +18,11 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+@media (max-width: 880px) {
+  .kasa-header {
+    padding: 24px 0px 24px 0px;
+  }
+}
 .kasa-header-content {
   display: flex;
   align-items: center;
@@ -26,10 +31,20 @@ body {
 .kasa-header .kasa-logo {
   height: 56px;
 }
+@media (max-width: 880px) {
+  .kasa-header .kasa-logo {
+    height: 32px;
+  }
+}
 .kasa-header .kasa-nav ul {
   list-style: none;
   display: flex;
   gap: 48px;
+}
+@media (max-width: 880px) {
+  .kasa-header .kasa-nav ul {
+    gap: 20px;
+  }
 }
 .kasa-header .kasa-nav li a {
   text-decoration: none;
@@ -39,6 +54,11 @@ body {
 }
 .kasa-header .kasa-nav li a:hover {
   text-decoration: underline;
+}
+@media (max-width: 880px) {
+  .kasa-header .kasa-nav li a {
+    font-size: 1rem;
+  }
 }
 .kasa-header .kasa-nav .active {
   text-decoration: underline;
@@ -78,6 +98,14 @@ body {
   margin-bottom: 32px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
+@media (max-width: 880px) {
+  .banner {
+    height: 110px;
+    box-shadow: none;
+    margin-bottom: 24px;
+    border-radius: 10px;
+  }
+}
 .banner__img {
   width: 100%;
   height: 100%;
@@ -91,10 +119,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
   z-index: 1;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 880px) {
+  .banner__txt {
+    font-size: 1.2rem;
+    text-align: left;
+    left: 36%;
+  }
 }
 
 .gallery {
@@ -108,6 +143,16 @@ body {
   padding: 50px;
   margin-bottom: 50px;
 }
+@media (max-width: 880px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+    margin-bottom: 32px;
+    background-color: #ffffff;
+    padding: 0px;
+  }
+}
 .gallery__container {
   width: 100%;
   aspect-ratio: 1/1;
@@ -115,6 +160,12 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+@media (max-width: 880px) {
+  .gallery__container {
+    aspect-ratio: 16/10;
+    height: auto;
+  }
 }
 .gallery__container--link {
   display: block;

@@ -6,6 +6,10 @@
   width: 90%; 
   margin: 0 auto;
 
+  @media (max-width: 880px) {
+    padding: 24px 0px 24px 0px;
+  }
+
   &-content {
     display: flex;
     align-items: center;
@@ -14,6 +18,10 @@
 
   .kasa-logo {
     height: 56px;
+
+    @media (max-width: 880px) {
+      height: 32px;
+    }
   }
 
   .kasa-nav {
@@ -21,6 +29,11 @@
       list-style: none;
       display: flex;
       gap: 48px;
+
+      @media (max-width: 880px) {
+        gap: 20px;
+      }
+
     }
 
     li {
@@ -33,6 +46,11 @@
         &:hover {
           text-decoration: underline;
         }
+
+        @media (max-width: 880px) {
+          font-size: 1rem;
+        }
+
       }
     }
     .active {
