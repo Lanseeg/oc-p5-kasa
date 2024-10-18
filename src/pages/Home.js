@@ -1,18 +1,17 @@
 // src/pages/Home.js
 import React from "react";
 import { Link } from "react-router-dom";
+import Banner from "../components/Banner";
+import homeBanner from "../assets/images/homebanner.png"
+import Gallery from "../components/Gallery";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="banner">
-        <h2 className="banner__title">Chez vous, partout et ailleurs</h2>
+      <Banner text="Chez vous, partout et ailleurs" image={homeBanner} />
       </div>
-      <div className="gallery">
-        <h3>
-          <Link to="/accomodation">Locations</Link>
-        </h3>
-      </div>
+      <Gallery />
     </div>
   );
 };

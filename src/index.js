@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style/index.css';
-//import './styles/main.scss'; // Import de Sass
+import './styles/main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

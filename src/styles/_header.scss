@@ -1,0 +1,42 @@
+// src/styles/_header.scss
+
+.kasa-header {
+  background-color: $secondary-color;
+  padding: 24px 0px 32px 0px;
+  width: 90%; 
+  margin: 0 auto;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .kasa-logo {
+    height: 56px;
+  }
+
+  .kasa-nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 48px;
+    }
+
+    li {
+      a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $third-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .active {
+      text-decoration: underline;
+    }
+  }
+}

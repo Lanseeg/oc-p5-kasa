@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+.kasa-header {
+  background-color: #ffffff;
+  padding: 24px 0px 32px 0px;
+  width: 90%;
+  margin: 0 auto;
+}
+.kasa-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.kasa-header .kasa-logo {
+  height: 56px;
+}
+.kasa-header .kasa-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+}
+.kasa-header .kasa-nav li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000000;
+}
+.kasa-header .kasa-nav li a:hover {
+  text-decoration: underline;
+}
+.kasa-header .kasa-nav .active {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+.footer__logo {
+  height: 36px;
+  width: auto;
+  margin: 40px 0px 16px 0px;
+}
+.footer__text {
+  font-size: 1.1rem;
+}
+
+.home {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.home h1 {
+  color: #ff6060;
+  font-size: 3rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.banner__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.4);
+}
+.banner__txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  z-index: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gallery {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 50px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+.gallery__container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.gallery__container--link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(180deg, #ff6060 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.card__title {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  font-size: 1.1rem;
+  z-index: 1;
+  font-weight: bold;
+  text-align: left;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 0;
+}/*# sourceMappingURL=main.css.map */
