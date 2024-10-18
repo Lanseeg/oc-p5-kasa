@@ -89,6 +89,11 @@ body {
   font-size: 3rem;
 }
 
+.about {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .banner {
   position: relative;
   width: 100%;
