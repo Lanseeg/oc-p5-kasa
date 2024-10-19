@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import '../styles/_collapse.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
+import "../styles/_collapse.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,22 +14,15 @@ const Collapse = ({ title, content }) => {
     <div className="collapse">
       <div className="collapse__header" onClick={toggleCollapse}>
         <h3>{title}</h3>
-        {/* arrow */}
-        <span className="collapse__icon">
-          {isOpen ? (
-            <FontAwesomeIcon icon={faChevronDown} style={{ color: '#ffffff' }} />
-          ) : (
-            <FontAwesomeIcon icon={faChevronUp} style={{ color: '#ffffff' }} />
-          )}
+        <span className={`collapse__icon ${isOpen ? "open" : ""}`}>
+          <FontAwesomeIcon icon={faChevronUp} style={{ color: "#ffffff" }} />
         </span>
       </div>
 
-      {/* content */}
-      {isOpen && (
-        <div className="collapse__content">
-          <p>{content}</p>
-        </div>
-      )}
+      {/* class 'open' */}
+      <div className={`collapse__content ${isOpen ? "open" : ""}`}>
+        <p>{content}</p>
+      </div>
     </div>
   );
 };
