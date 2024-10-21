@@ -1,0 +1,43 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-top: 0px;
+    font-size: 10rem;
+    color: $primary-color;
+
+    @media (max-width: 880px) {
+        font-size: 6rem;
+        margin-top: 48px;
+    }
+  }
+
+  &__text {
+    margin-top: 48px;
+    color: $primary-color;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    @media (max-width: 880px) {
+        width: 70%;
+        margin-top: 72px;
+    }
+  }
+
+  &__link {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    color: black;
+    text-decoration: underline;
+
+    @media (max-width: 880px) {
+        margin-top: 86px;
+        margin-bottom: 86px;
+    }
+  }
+
+}
