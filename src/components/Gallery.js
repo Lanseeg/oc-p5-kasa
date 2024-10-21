@@ -9,7 +9,7 @@ const Gallery = () => {
       {accomodations.map((accomodation) => {
         return (
           <article key={accomodation.id} className="gallery__container">
-            <Link to={`/logement/${accomodation.id}`} className="gallery__container--link">
+            <Link to={`/accomodation/${accomodation.id}`} className="gallery__container--link">
               <Card image={accomodation.cover} title={accomodation.title} />
             </Link>
           </article>

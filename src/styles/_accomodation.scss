@@ -1,0 +1,53 @@
+.accomodation {
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    &__collapses {
+      margin-top: 30px;
+    }
+  
+    .carousel img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .accom-title h1 {
+      font-size: 2rem;
+      color: #ff6060;
+    }
+  
+    .tags .tag {
+      background-color: #ff6060;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  
+    .rating .star {
+      font-size: 1.5rem;
+      color: lightgray;
+    }
+  
+    .rating .star.filled {
+      color: #ff6060;
+    }
+  
+    .host {
+      display: flex;
+      align-items: center;
+    }
+  
+    .host__picture {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+    }
+  }
+  

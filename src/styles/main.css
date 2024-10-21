@@ -105,6 +105,49 @@ body {
   }
 }
 
+.accomodation__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.accomodation__collapses {
+  margin-top: 30px;
+}
+.accomodation .carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.accomodation .accom-title h1 {
+  font-size: 2rem;
+  color: #ff6060;
+}
+.accomodation .tags .tag {
+  background-color: #ff6060;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.accomodation .rating .star {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+.accomodation .rating .star.filled {
+  color: #ff6060;
+}
+.accomodation .host {
+  display: flex;
+  align-items: center;
+}
+.accomodation .host__picture {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
 .banner {
   position: relative;
   width: 100%;
