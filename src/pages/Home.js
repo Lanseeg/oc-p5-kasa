@@ -1,6 +1,5 @@
 // src/pages/Home.js
 import React from "react";
-import { Link } from "react-router-dom";
 import Banner from "../components/Banner";
 import homeBanner from "../assets/images/homebanner.png";
 import Gallery from "../components/Gallery";

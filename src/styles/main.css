@@ -105,6 +105,10 @@ body {
   }
 }
 
+.accomodation {
+  width: 90%;
+  margin: 0 auto;
+}
 .accomodation__details {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import accomodations from '../data/accomodations.json';
-import Carrousel from '../components/Carrousel';
+import Carousel from '../components/Carousel';
 import AccomTitle from '../components/AccomTitle';
 import Host from '../components/Host';
 import Tags from '../components/Tags';
@@ -20,7 +20,7 @@ const Accomodation = () => {
 
   return (
     <div className="accomodation">
-      <Carrousel images={accomodation.pictures} /> {/* Carrousel */}
+      <Carousel images={accomodation.pictures} /> {/* Carousel */}
       <div className="accomodation__details">
         <AccomTitle title={accomodation.title} location={accomodation.location} />
         <Host name={accomodation.host.name} picture={accomodation.host.picture} />

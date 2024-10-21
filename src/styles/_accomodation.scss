@@ -1,4 +1,8 @@
 .accomodation {
+
+    width: 90%;
+    margin: 0 auto;
+
     &__details {
       display: flex;
       flex-direction: column;
@@ -18,11 +22,11 @@
   
     .accom-title h1 {
       font-size: 2rem;
-      color: #ff6060;
+      color: $primary-color;
     }
   
     .tags .tag {
-      background-color: #ff6060;
+      background-color: $primary-color;
       color: white;
       padding: 5px 10px;
       border-radius: 5px;
