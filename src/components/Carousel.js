@@ -7,7 +7,7 @@ const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0); // Current image index
   const totalImages = images.length;
 
-  // Gestion du clic sur la flèche droite
+  // Right clic handling
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages); // Loop after last image
   };
@@ -38,7 +38,7 @@ const Carousel = ({ images }) => {
         ))}
       </div>
 
-      {/* Display images only if several arrows */}
+      {/* Display arrows only if several images */}
       {totalImages > 1 && (
         <>
           <button className="carousel__arrow left" onClick={prevSlide}>
@@ -50,7 +50,7 @@ const Carousel = ({ images }) => {
         </>
       )}
 
-      {/* Display index */}
+      {/* Display index only if several images */}
       {totalImages > 1 && (
         <div className="carousel__counter">
           {currentIndex + 1}/{totalImages}

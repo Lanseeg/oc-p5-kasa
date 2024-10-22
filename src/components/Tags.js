@@ -1,5 +1,6 @@
 // src/components/Tags.js
 import React from 'react';
+import '../styles/_tags.scss';
 
 const Tags = ({ tags }) => {
   return (

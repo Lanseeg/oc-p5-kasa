@@ -1,19 +1,25 @@
 .carousel {
   position: relative;
   width: 100%;
-  height: 390px;
+  height: 352px;
   overflow: hidden;
   border-radius: 10px;
 
+  @media (max-width: 880px) {
+    height: 260px;
+  }
+
   &__track {
     display: flex;
-    transition: transform 0.5s ease; /* translation animation */
+    width: 100%;
+    transition: transform 0.5s ease;
   }
 
   &__image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    object-position: 10px -250px;
   }
 
   &__arrow {
@@ -28,6 +34,11 @@
     z-index: 2;
     border-radius: 50%;
     font-size: 4rem;
+    transition: background 0.3s ease;
+
+    @media (max-width: 880px) {
+      font-size: 1.5rem;
+    }
 
     &.left {
       left: 10px;
@@ -36,6 +47,10 @@
     &.right {
       right: 10px;
     }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__counter {
@@ -43,10 +58,14 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 1rem;
+    
+    @media (max-width: 880px) {
+      display: none;
+    }
+
   }
 }

@@ -1,57 +1,106 @@
 .accomodation {
+  width: 90%;
+  margin: 0 auto;
 
-    width: 90%;
-    margin: 0 auto;
+  &__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 
-    &__details {
-      display: flex;
+    @media (max-width: 880px) {
+      margin-top: 8px;
       flex-direction: column;
-      gap: 20px;
-    }
-  
-    &__collapses {
-      margin-top: 30px;
-    }
-  
-    .carousel img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-  
-    .accom-title h1 {
-      font-size: 2rem;
-      color: $primary-color;
-    }
-  
-    .tags .tag {
-      background-color: $primary-color;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
-  
-    .rating .star {
-      font-size: 1.5rem;
-      color: lightgray;
-    }
-  
-    .rating .star.filled {
-      color: #ff6060;
-    }
-  
-    .host {
-      display: flex;
-      align-items: center;
-    }
-  
-    .host__picture {
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      margin-left: 10px;
     }
   }
-  
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 880px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    order: 2;
+
+    @media (max-width: 880px) {
+      order: 1;
+    }
+  }
+
+  &__host {
+    display: inline-flex;
+    order: 1;
+
+    @media (max-width: 880px) {
+      order: 2;
+    }
+  }
+
+  &__collapses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
+
+    @media (max-width: 880px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  &__collapses h3 {
+    font-size: 1.1rem;
+  }
+
+  .accom-title h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: $primary-color;
+
+    @media (max-width: 880px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .accom-title p {
+    font-weight: 600;
+  }
+
+  .star {
+    font-size: 1.3rem;
+    color: lightgray;
+    margin-right: 8px;
+
+    @media (max-width: 880px) {
+      font-size: 1rem;
+    }
+
+  }
+
+  .star.filled {
+    color: $primary-color;
+  }
+
+}
