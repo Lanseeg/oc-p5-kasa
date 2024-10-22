@@ -1,6 +1,6 @@
 // src/pages/Accomodation.js
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import accomodations from "../data/accomodations.json";
 import Carousel from "../components/Carousel";
 import AccomTitle from "../components/AccomTitle";
@@ -10,18 +10,23 @@ import Rating from "../components/Rating";
 import Collapse from "../components/Collapse";
 
 const Accomodation = () => {
-  const { id } = useParams(); // ID from URL
+  const { id } = useParams();
+  const navigate = useNavigate();
+
   const accomodation = accomodations.find(
     (accomodation) => accomodation.id === id
   );
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top of the page (fix)
-  }, []);
+    if (!accomodation) {
+      navigate("/404");
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [accomodation, navigate]); 
 
-  // if none found
   if (!accomodation) {
-    return <div>Accomodation not found</div>;
+    return null;
   }
 
   return (
