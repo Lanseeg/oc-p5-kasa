@@ -6,7 +6,7 @@
   width: 90%; 
   margin: 0 auto;
 
-  @media (max-width: 880px) {
+  @include respond-to(tablet) {
     padding: 24px 0px 24px 0px;
   }
 
@@ -19,7 +19,7 @@
   .kasa-logo {
     height: 56px;
 
-    @media (max-width: 880px) {
+    @include respond-to(tablet) {
       height: 32px;
     }
   }
@@ -30,7 +30,7 @@
       display: flex;
       gap: 48px;
 
-      @media (max-width: 880px) {
+      @include respond-to(tablet) {
         gap: 20px;
       }
 
@@ -47,7 +47,7 @@
           text-decoration: underline;
         }
 
-        @media (max-width: 880px) {
+        @include respond-to(tablet) {
           font-size: 1rem;
         }
 

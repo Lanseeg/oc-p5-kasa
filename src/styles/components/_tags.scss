@@ -1,3 +1,5 @@
+@import '../abstracts/variables'; 
+
 .tags {
     display: flex;
     gap: 10px;
@@ -5,8 +7,8 @@
     margin-bottom: 15px;
 
     .tag {
-      background-color: #ff6060;
-      color: white;
+      background-color: $primary-color;
+      color: $secondary-color;
       font-weight: 500;
       font-size: 1rem;
       padding: 5px 10px;

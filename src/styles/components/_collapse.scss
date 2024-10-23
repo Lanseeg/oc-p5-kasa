@@ -1,11 +1,13 @@
+@import '../abstracts/variables'; 
+
 .collapse {
   margin-bottom: 24px;
   border-radius: 5px;
   overflow: hidden;
   
   &__header {
-    background-color: #ff6060;
-    color: white;
+    background-color: $primary-color;
+    color: $secondary-color;
     padding: 8px;
     display: flex;
     justify-content: space-between;
@@ -20,10 +22,10 @@
   }
 
   &__content {
-    background-color: #f8f8f8;
+    background-color: $secondary-color;
     padding: 10px;
     font-size: 1rem;
-    color: #333;
+    color: $third-color;
     overflow: hidden;
     max-height: 0; /* for css animation */
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
