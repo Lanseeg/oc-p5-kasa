@@ -1,6 +1,6 @@
 // src/components/Host.js
 import React from "react";
-import '../styles/_host.scss';
+import '../styles/components/_host.scss';
 
 const Host = ({ name, picture }) => {
   return (

@@ -1,19 +1,26 @@
 // src/styles/main.scss
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/base';
 
-@import 'variables';
-@import 'mixins';
-@import 'base';
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/layout';
 
-@import 'header';
-@import 'footer';
-@import 'layout';
-@import 'home';        
-@import 'about';
-@import 'accomodation';
-@import 'banner';
-@import 'gallery';
-@import 'card';
-@import 'collapse';
-@import 'error404';
-@import 'host';
-@import 'tags';
+// Components
+@import 'components/banner';
+@import 'components/gallery';
+@import 'components/card';
+@import 'components/carousel';
+@import 'components/collapse';
+@import 'components/host';
+@import 'components/tags';
+
+// Pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/accomodation';
+@import 'pages/error404';
+

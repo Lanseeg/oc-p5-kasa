@@ -1,0 +1,18 @@
+// src/styles/_about.scss
+.about {
+    width: 90%;
+    margin: 0 auto;
+
+    &__collapse {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 36px;
+        margin-bottom: 36px;
+
+        @media (max-width: 880px) {
+            width: 100%;
+        }
+
+    }
+
+}

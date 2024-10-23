@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/_collapse.scss";
+import "../styles/components/_collapse.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 

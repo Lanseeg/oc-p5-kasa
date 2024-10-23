@@ -1,0 +1,16 @@
+// src/styles/_footer.scss
+
+.footer {
+  background-color: $third-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 10px;
+  &__logo {
+    height: 36px;
+    width: auto;
+    margin: 40px 0px 16px 0px;
+  }
+  &__text {
+    font-size: 1.1rem;
+  }
+}
