@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+Kasa - Frontend Project
+Kasa is a fictional property rental web application built as part of the OpenClassrooms Web Developer course. This project is designed to demonstrate proficiency with React, SCSS, React Router, and other web development best practices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Overview
+Features
+Technologies Used
+Project Structure
+Installation
+Scripts
+Author
+License
+Overview
+Kasa is a platform where users can browse through property listings, view property details, and get information about the host. This project focuses on the frontend, and it uses React and SCSS to deliver a modular and reusable UI.
 
-## Available Scripts
+Main Pages:
+Homepage: Displays a gallery of property listings.
+Property Page: Shows details about a selected property, including a carousel of images, rating, tags, and description.
+About Page: Information about Kasa and its values.
+Error Page (404): Shown when a route does not match an existing page.
+Features
+React-based architecture with reusable components.
+Responsive design with SCSS and Flexbox.
+Dynamic routing with React Router.
+Property listings fetched from local JSON data.
+Carousel component for browsing property images.
+Star-based rating system.
+Technologies Used
+React (via Create React App)
+React Router
+SCSS for styling
+FontAwesome for icons
+Node.js for running the development environment
+Project Structure
+The project is organized as follows:
 
-In the project directory, you can run:
+graphql
+Copy code
+src/
+│
+├── components/          # Reusable UI components (e.g., Header, Footer, Carousel, etc.)
+├── data/                # JSON files for mock data (accommodations, about content)
+├── pages/               # Pages for routing (Home, About, Accomodation, Error404)
+├── styles/              # SCSS files organized by components, layouts, and pages
+├── App.js               # Main App component
+└── index.js             # Entry point for the app
+Installation
+Follow these steps to set up the project locally:
 
-### `npm start`
+Prerequisites
+Node.js (v20.x recommended)
+npm (Node package manager) or Yarn (optional)
+Steps
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/Lanseeg/oc-p5-kasa.git
+cd oc-p5-kasa
+Install the dependencies:
+Using npm:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm install
+Or using Yarn:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+yarn install
+Start the development server:
+Using npm:
 
-### `npm test`
+bash
+Copy code
+npm start
+Or using Yarn:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+yarn start
+The project will be available at http://localhost:3000.
 
-### `npm run build`
+Troubleshooting
+If you encounter issues related to missing babel packages, you can fix them by running the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+Scripts
+The following scripts are available in this project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start: Runs the app in development mode on http://localhost:3000.
+npm run build: Builds the app for production to the build folder.
+npm run test: Launches the test runner in interactive watch mode.
+npm run eject: Ejects the app configuration (use with caution).
+Author
+Pierre Gourves - GitHub: https://github.com/Lanseeg
