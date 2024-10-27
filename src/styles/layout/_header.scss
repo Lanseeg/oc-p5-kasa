@@ -3,11 +3,12 @@
 .kasa-header {
   background-color: $secondary-color;
   padding: 24px 0px 32px 0px;
-  width: 90%; 
+  width: 85%; 
   margin: 0 auto;
 
   @include respond-to(tablet) {
     padding: 24px 0px 24px 0px;
+    width: 92%;
   }
 
   &-content {
@@ -20,7 +21,7 @@
     height: 56px;
 
     @include respond-to(tablet) {
-      height: 32px;
+      height: 42px;
     }
   }
 

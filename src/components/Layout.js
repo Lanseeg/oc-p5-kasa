@@ -1,13 +1,16 @@
 // src/components/Layout.js
+
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       <Header />
-      <main>{children}</main>
+      <main className="layout__content">
+        {children}
+      </main>
       <Footer />
     </div>
   );

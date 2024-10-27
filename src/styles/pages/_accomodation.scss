@@ -1,6 +1,10 @@
 .accomodation {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
+
+  @media (max-width: 880px) {
+    width: 92%;
+  }
 
   &__group {
     display: flex;
@@ -39,6 +43,7 @@
 
   &__rating {
     display: flex;
+    width: 160px;
     align-items: center;
     gap: 8px;
     order: 2;
